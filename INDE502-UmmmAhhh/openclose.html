@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <header><div class="circle"></div></header>
+
+    <h1>UmmAhh - Social Media Gateway</h1>
+    <p></p>
+    <h4>Congratulations, You have successfully completed the quiz on your chosen topic. Now you are able to access either
+    Facebook, Twitter, of Instagram for a limited amount of time. Once your time is up then you will be sent back to the UmmAhh
+    Homepage.</h4>
+    <p></p>
+    <h4>Use the buttons below to choose which social media page you would like to go to. You then have 30 seconds to use that
+    page as you please.</h4>
+
+    <button onclick="openInNewTab('https://www.facebook.com')">Facebook</button>
+    <button onclick="openInNewTab('https://www.twitter.com')">Twitter</button>
+    <button onclick="openInNewTab('https://www.instagram.com')">Instagram</button>
+
+    <script>
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+            setTimeout(function(){
+                    win.close()
+                }, 30000);
+            }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <footer><img class="w-100" src="images/bottomcircle.png"></img></footer>
+
+</body>
+</html>

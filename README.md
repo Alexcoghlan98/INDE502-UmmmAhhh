@@ -13,4 +13,4 @@ they have a limited amount of time to use that social media page as they desire.
 
 Over the past eight weeks I have been writing and editing code so that I can successfully create the application that I researched and
 designed in the previous module. Some parts have been a struggle but at the same time has been very rewarding when my code worked in 
-the different areas of my code.
+the different areas of my code and I feel like this module has been fun to do yet very challenging at times.

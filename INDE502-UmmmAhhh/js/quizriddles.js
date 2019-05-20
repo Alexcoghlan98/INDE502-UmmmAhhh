@@ -1,32 +1,32 @@
 (function() {
   const myQuestions = [
     {
-      question: "I am tall when I am young yet short when I am old... What am I?",
-      answers: {
+      question: "I am tall when I am young yet short when I am old... What am I?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "A Lighthouse",
         b: "A Tree",
         c: "A Candle"
       },
-      correctAnswer: "c"
+      correctAnswer: "c" //Declares which of the answers is correct
     },
     {
-      question: "What has an eye but cannot see?",
-      answers: {
+      question: "What has an eye but cannot see?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "A Needle",
         b: "A Storm",
         c: "Sauron But He Is Blind"
       },
-      correctAnswer: "a"
+      correctAnswer: "a" //Declares which of the answers is correct
     },
     {
-      question: "What sort of room has no doors or windows?",
-      answers: {
+      question: "What sort of room has no doors or windows?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "A Prison Cell",
         b: "A Mushroom",
         c: "A Chat Room",
         d: "Breathing Room"
       },
-      correctAnswer: "b"
+      correctAnswer: "b" //Declares which of the answers is correct
     }
   ];
 

@@ -9,21 +9,22 @@
 <div id="quiz"></div>
 </div>
 
-<link href="css/style.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"> <!-- Links to the css page -->
 
 </head>
 
 <body>
 
 
-<a class="button button3" href="quiz.html">Let's Get Quizzical</a>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
-<a class="button button3" href="openclose.html">Social Media</a>
-<div id="results"></div>
+<a class="button button3" href="quiz.html">Let's Get Quizzical</a> <!-- This allows the user to go back to the quiz landing page -->
+<button id="previous">Previous Question</button> <!-- Loads the previous question in the quiz -->
+<button id="next">Next Question</button> <!-- Loads the next question in the quiz -->
+<button id="submit">Submit Quiz</button> <!-- Once all of the questions are answered the user can submit them -->
+<!-- <a class="button button3" href="openclose.html">Social Media</a> -->
+<button id="socialmedia">Social Media</button> <!-- This sends the user to the social media where they are able to select what social media they want to interact with. -->
+<div id="results"></div> <!-- This displays the results of the questions they answered -->
 
-  <script src="..\js\quizriddles.js"></script>
+  <script src="..\js\quizriddles.js"></script> <!-- This links to the relevant JavaScript file for this quiz page -->
 
   <script type ="text/javascript">
     what();
@@ -39,6 +40,10 @@
             function what(){
                 document.getElementById('submit').innerHTML = 'Submit';
             };
+              what();
+              function what(){
+                  document.getElementById('socialmedia').innerHTML = 'Social Media';
+                };
 
   </script>
 

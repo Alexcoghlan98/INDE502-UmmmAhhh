@@ -1,32 +1,32 @@
 (function() {
   const myQuestions = [
     {
-      question: "How many pennies are in £1 Million?",
-      answers: {
+      question: "How many pennies are in £1 Million?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "100,000,000 pennies",
         b: "1,000,000 pennies",
         c: "10,000,000 pennies"
       },
-      correctAnswer: "a"
+      correctAnswer: "a" //Declares which of the answers is correct
     },
     {
-      question: "What is 8 + 3 x 4?",
-      answers: {
+      question: "What is 8 + 3 x 4?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "20",
         b: "24",
         c: "44"
       },
-      correctAnswer: "c"
+      correctAnswer: "a" //Declares which of the answers is correct
     },
     {
-      question: "What is 78.34 + 94.21?",
-      answers: {
+      question: "What is 78.34 + 94.21?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "175.50",
         b: "169.43",
         c: "172.55",
         d: "167.49"
       },
-      correctAnswer: "c"
+      correctAnswer: "c" //Declares which of the answers is correct
     }
   ];
 

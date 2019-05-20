@@ -5,29 +5,29 @@
 } */
 
 html
-body {
+body { /* This declares the basics for the body like the size of the size of the page and general colours */
   width: 100%;
   height: 100%;
   background-color: #F9F8F8;
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif; /* This inputs what font I want the different pages to possess */
 }
 
-.circle {
-  background-color: #ccbef4;
+.circle { /* This is the circle that is at the top of the homepage and some of the other pages */
+  background-color: #ccbef4; /* Declares the colour */
   width: 1360px;
   height: 250px;
-  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%;
-  margin-top: -130px;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%; /* Shapes the circle */
+  margin-top: -130px; /* Moves it around the page */
 }
 
-.circle2 {
+.circle2 { /* This is the circle that is at the bottom of every page */
   background-color: #b09ee4;
   width: 1360px;
   height: 250px;
-  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%; /* shapes the circle */
   /* margin-top: 400px; */
 }
 
@@ -47,33 +47,33 @@ body {
   /* margin-top: 400px; */
 }
 
-.button{
-  background-color: #ccbef4;
+.button{ /* Eveyhing in here styles the buttons across the pages */
+  background-color: #ccbef4; /* sets the colour */
   padding: 20px 40px;
-  border-radius: 15px;
-  margin-top: 10px;
-  margin-left: 1px;
-  margin-right: 1px;
+  border-radius: 15px; /* shapes the button */
+  margin-top: 10px; /* how much space is around the button */
+  margin-left: 1px; /* how much space is around the button */
+  margin-right: 1px; /* how much space is around the button */
   font-family: Ubuntu;
   font-size: 17px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s; /* How long the transition is for the button to change colour on hover. */
   transition-duration: 0.4s;
   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .button:hover {
-  background-color: #ccbef4; /* Primary Purple */
-  background-color: #b09ee4; /* Secondary Purple */
+  background-color: #ccbef4; /* Primary Purple - Stand alone colour */
+  background-color: #b09ee4; /* Secondary Purple - When the user hovers over the button */
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #ccbef4;
-  color: black;
+  background-color: #ccbef4; /* the colour of the button before dropdown */
+  color: black; /* colour of the text within the button */
   padding: 16px;
   font-size: 16px;
   border: none;
-  border-radius: 15px;
+  border-radius: 15px; /* shapes the dropdown button */
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -86,11 +86,11 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1; /* background colour of the dropdown boxes */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: 15px;
+  border-radius: 15px; /* shapes the dropdown boxes */
 }
 
 /* Links inside the dropdown */
@@ -111,7 +111,7 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #b09ee4;}
 
-.chart {
+.chart { /* everything in here styles the chart */
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(100, 1fr);
@@ -199,19 +199,19 @@ img{
   margin-top: 5px;
 }
 
-h1{
+h1{ /* styles the h1 tags */
   text-align: center;
 }
 
-h2{
+h2{ /* styles the h2 tags */
   text-align: center;
 }
 
-h3 {
+h3 { /* styles the h3 tags */
   text-align: center;
 }
 
-h4 {
+h4 { /* styles the h4 tags */
   text-align: center;
   font-weight: 300;
   margin: 0px;
@@ -219,7 +219,7 @@ h4 {
   font-size: 22px;
 }
 
-h5 {
+h5 { /* styles the h5 tags */
   text-align: center;
 }
 
@@ -241,11 +241,11 @@ h5{
   background-color: #ccbef4;
   color: #fff;
 }
-.question{
+.question{ /* styles the font/text for the questions */
   font-size: 30px;
   margin-bottom: 10px;
 }
-.answers {
+.answers { /* styles the fot/text for the answers */
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
@@ -254,7 +254,7 @@ h5{
   display: block;
   margin-bottom: 10px;
 }
-button{
+button{ /* styles the buttons on the quiz pages */
   font-family: 'Work Sans', sans-serif;
     font-size: 22px;
     background-color: #ccbef4;
@@ -265,7 +265,7 @@ button{
     cursor: pointer;
     margin-bottom: 20px;
 }
-button:hover{
+button:hover{ /* styles the button hover */
     background-color: #b09ee4;
 }
 

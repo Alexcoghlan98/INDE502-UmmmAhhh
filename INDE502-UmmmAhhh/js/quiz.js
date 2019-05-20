@@ -1,32 +1,32 @@
 (function() {
   const myQuestions = [
     {
-      question: "Why Don't Chickens Play Baseball?",
-      answers: {
+      question: "Why Don't Chickens Play Baseball?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "They're Too Small",
         b: "Because They Always Hit Fowl Balls",
         c: "They're Too Busy Crossing The Road"
       },
-      correctAnswer: "b"
+      correctAnswer: "b" //Declares which of the answers is correct
     },
     {
-      question: "What is the best thing about Switzerland?",
-      answers: {
+      question: "What is the best thing about Switzerland?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "The creation of Velcro shoes",
         b: "Producing the Helvetica Font",
         c: "I don't know, But the flag is a massive plus"
       },
-      correctAnswer: "c"
+      correctAnswer: "c" //Declares which of the answers is correct
     },
     {
-      question: "What exercise do lazy people do?",
-      answers: {
+      question: "What exercise do lazy people do?", //This declares the question
+      answers: { //This inputs how many answers the user can select from
         a: "Push-ups",
         b: "Diddly-Squats",
         c: "Shuttle runs from the sofa to the fridge",
         d: "Whatever it is, They'll do it tomorrow"
       },
-      correctAnswer: "b"
+      correctAnswer: "b" //Declares which of the answers is correct
     }
   ];
 
@@ -127,6 +127,7 @@
   const quizContainer = document.getElementById("quiz");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
+  const socialButton = document.getElementById("socialmedia")
 
   // display quiz right away
   buildQuiz();

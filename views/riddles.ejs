@@ -1,0 +1,26 @@
+<h5>UmmAhh Off Topic Quiz</h5>
+<div class="quiz-container">
+<div id="quiz"></div>
+</div>
+
+<body>
+
+
+<a class="button button3" href="quiz">Let's Get Quizzical</a> <!-- This allows the user to go back to the quiz landing page -->
+<button id="previous">Previous Question</button> <!-- Loads the previous question in the quiz -->
+<button id="next">Next Question</button> <!-- Loads the next question in the quiz -->
+<button id="submit">Submit Quiz</button> <!-- Once all of the questions are answered the user can submit them -->
+<a id="socialmedia" href="openclose" class="hide">Social Media</a> <!-- This sends the user to the social media where they are able to select what social media they want to interact with. -->
+<div id="results"></div>
+
+  <script src="..\js\quizriddles.js"></script> <!-- This links to the relevant JavaScript file for this quiz page -->
+
+  <script type ="text/javascript">
+    what();
+    function what(){
+        document.getElementById('previous').innerHTML = 'Previous Question';
+        document.getElementById('next').innerHTML = 'Next Question';
+        document.getElementById('submit').innerHTML = 'Submit';
+    };
+
+  </script>

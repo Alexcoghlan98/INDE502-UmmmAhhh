@@ -1,0 +1,297 @@
+/* @font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+       url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+} */
+
+html
+body { /* This declares the basics for the body like the size of the size of the page and general colours */
+  width: 100%;
+  height: 100%;
+  background-color: #F9F8F8;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif; /* This inputs what font I want the different pages to possess */
+}
+
+.hide{
+  display: none;
+}
+
+.circle { /* This is the circle that is at the top of the homepage and some of the other pages */
+  background-color: #ccbef4; /* Declares the colour */
+  width: 1360px;
+  height: 250px;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%; /* Shapes the circle */
+  margin-top: -130px; /* Moves it around the page */
+}
+
+.circle2 { /* This is the circle that is at the bottom of every page */
+  background-color: #b09ee4;
+  width: 1360px;
+  height: 250px;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%; /* shapes the circle */
+  /* margin-top: 400px; */
+}
+
+.circle3{
+  background-color: #f9d9d9;
+  width: 1360px;
+  height: 250px;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%;
+  margin-top: -130px;
+}
+
+.circle4{
+  background-color: #ffe6e1;
+  width: 1360px;
+  height: 250px;
+  border-radius: 51% 49% 50% 50% / 48% 48% 52% 52%;
+  /* margin-top: 400px; */
+}
+
+.button{ /* Eveything in here styles the buttons across the pages */
+  background-color: #ccbef4; /* sets the colour */
+  padding: 20px 40px;
+  border-radius: 15px; /* shapes the button */
+  margin-top: 10px; /* how much space is around the button */
+  margin-left: 1px; /* how much space is around the button */
+  margin-right: 1px; /* how much space is around the button */
+  font-family: Ubuntu;
+  font-size: 17px;
+  -webkit-transition-duration: 0.4s; /* How long the transition is for the button to change colour on hover. */
+  transition-duration: 0.4s;
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.button:hover {
+  background-color: #ccbef4; /* Primary Purple - Stand Alone Colour*/
+  background-color: #b09ee4; /* Secondary Purple - Colour when User Hovers*/
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ccbef4; /* the colour of the button before dropdown */
+  color: black; /* colour of the text within the button */
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px; /* shapes the dropdown button */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1; /* background colour of the dropdown boxes */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 15px; /* shapes the dropdown boxes */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #b09ee4;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #b09ee4;}
+
+.chart { /* everything in here styles the chart */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(100, 1fr);
+  grid-column-gap: 5px;
+  height: 60vh;
+  width: 65vw;
+  padding: 5px 10px;
+}
+
+[class*="bar"] {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px 5px 0 0;
+  transition: all .6s ease;
+  grid-row-end: 102;
+
+  &:hover {
+    opacity: .5;
+    cursor: pointer;
+  }
+}
+
+.bar-1 {
+  grid-row-start: 1;
+}
+
+.bar-2 {
+  grid-row-start: 30;
+}
+
+.bar-3 {
+  grid-row-start: 20;
+}
+
+.bar-4 {
+  grid-row-start: 50;
+}
+
+.bar-5 {
+  grid-row-start: 60;
+}
+
+.bar-6 {
+  grid-row-start: 20;
+}
+
+.bar-7 {
+  grid-row-start: 30;
+}
+
+.bar-8 {
+  grid-row-start: 10;
+}
+
+.bar-9 {
+  grid-row-start: 80;
+}
+
+.bar-10 {
+  grid-row-start: 40;
+}
+
+.bar-11 {
+  grid-row-start: 20;
+}
+
+.bar-12 {
+  grid-row-start: 60;
+}
+
+[class*="bar"]:nth-child(odd) {
+ background-color: #ccbef4;
+}
+
+[class*="bar"]:nth-child(even) {
+ background-color: #b09ee4;
+}
+
+
+img{
+  margin-top: 5px;
+}
+
+img{
+  margin-top: 5px;
+}
+
+h1{  /* styles the h1 tags */
+  text-align: center;
+}
+
+h2{ /* styles the h2 tags */
+  text-align: center;
+}
+
+h3 { /* styles the h3 tags */
+  text-align: center;
+}
+
+h4 { /* styles the h4 tags */
+  text-align: center;
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+h5 { /* styles the h5 tags */
+  text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+body{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #f8f6f0;
+}
+h5{
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 22px;
+  background-color: #ccbef4;
+  color: #fff;
+}
+.question{ /* styles the font/text for the questions */
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.answers { /* styles the font/text for the answers */
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+button{ /* styles the buttons on the quiz pages */
+  font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    background-color: #ccbef4;
+    color: #fff;
+    border: 0px;
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover{ /* styles the button hover */
+    background-color: #b09ee4;
+}
+
+
+
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}

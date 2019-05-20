@@ -94,6 +94,7 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
   }
 
   function showSlide(n) {
@@ -127,7 +128,6 @@
   const quizContainer = document.getElementById("quiz");
   const resultsContainer = document.getElementById("results");
   const submitButton = document.getElementById("submit");
-  const socialButton = document.getElementById("socialmedia")
 
   // display quiz right away
   buildQuiz();
@@ -135,12 +135,21 @@
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
   const slides = document.querySelectorAll(".slide");
+
   let currentSlide = 0;
 
   showSlide(0);
 
   // on submit, show results
-  submitButton.addEventListener("click", showResults);
+  submitButton.addEventListener("click", ()=>{
+    showResults()
+    revealSocialMediaBtn()
+  });
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
+
+function revealSocialMediaBtn(){
+  const socialMediaButton = document.querySelector('#socialmedia')
+ socialMediaButton.classList.toggle('hide');
+}

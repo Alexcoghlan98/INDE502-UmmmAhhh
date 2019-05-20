@@ -1,7 +1,7 @@
 (function() {
   const myQuestions = [
     {
-      question: "I am tall when I am young yet short when I am old... What am I?", //This declares the question
+      question: "I am tall when I am young yet short when I am old... What am I?",  //This declares the question
       answers: { //This inputs how many answers the user can select from
         a: "A Lighthouse",
         b: "A Tree",
@@ -10,7 +10,7 @@
       correctAnswer: "c" //Declares which of the answers is correct
     },
     {
-      question: "What has an eye but cannot see?", //This declares the question
+      question: "What has an eye but cannot see?",  //This declares the question
       answers: { //This inputs how many answers the user can select from
         a: "A Needle",
         b: "A Storm",
@@ -19,7 +19,7 @@
       correctAnswer: "a" //Declares which of the answers is correct
     },
     {
-      question: "What sort of room has no doors or windows?", //This declares the question
+      question: "What sort of room has no doors or windows?",  //This declares the question
       answers: { //This inputs how many answers the user can select from
         a: "A Prison Cell",
         b: "A Mushroom",
@@ -94,6 +94,7 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+
   }
 
   function showSlide(n) {
@@ -134,12 +135,21 @@
   const previousButton = document.getElementById("previous");
   const nextButton = document.getElementById("next");
   const slides = document.querySelectorAll(".slide");
+
   let currentSlide = 0;
 
   showSlide(0);
 
   // on submit, show results
-  submitButton.addEventListener("click", showResults);
+  submitButton.addEventListener("click", ()=>{
+    showResults()
+    revealSocialMediaBtn()
+  });
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
+
+function revealSocialMediaBtn(){
+  const socialMediaButton = document.querySelector('#socialmedia')
+ socialMediaButton.classList.toggle('hide');
+}

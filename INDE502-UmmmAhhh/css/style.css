@@ -15,6 +15,10 @@ body {
   font-family: 'Ubuntu', sans-serif; /* This inputs what font I want the different pages to possess */
 }
 
+.hide{
+  display: none;
+}
+
 .circle { /* This is the circle that is at the top of the homepage and some of the other pages */
   background-color: #ccbef4; /* Declares the colour */
   width: 1360px;
@@ -47,7 +51,7 @@ body {
   /* margin-top: 400px; */
 }
 
-.button{ /* Eveyhing in here styles the buttons across the pages */
+.button{ /* Eveything in here styles the buttons across the pages */
   background-color: #ccbef4; /* sets the colour */
   padding: 20px 40px;
   border-radius: 15px; /* shapes the button */
@@ -62,8 +66,8 @@ body {
 }
 
 .button:hover {
-  background-color: #ccbef4; /* Primary Purple - Stand alone colour */
-  background-color: #b09ee4; /* Secondary Purple - When the user hovers over the button */
+  background-color: #ccbef4; /* Primary Purple - Stand Alone Colour*/
+  background-color: #b09ee4; /* Secondary Purple - Colour when User Hovers*/
 }
 
 /* Dropdown Button */
@@ -199,7 +203,7 @@ img{
   margin-top: 5px;
 }
 
-h1{ /* styles the h1 tags */
+h1{  /* styles the h1 tags */
   text-align: center;
 }
 
@@ -245,7 +249,7 @@ h5{
   font-size: 30px;
   margin-bottom: 10px;
 }
-.answers { /* styles the fot/text for the answers */
+.answers { /* styles the font/text for the answers */
   margin-bottom: 20px;
   text-align: left;
   display: inline-block;
